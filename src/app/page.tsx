@@ -129,6 +129,15 @@ const LandingPage = () => {
   alertMessage="URGENTE: Las familias necesitan protección ahora más que nunca"
 />
 
+
+{/* <HeroSection
+  backgroundImage="/images/peoples/caged.jpg"
+  title="Every 20 Minutes, Another Family Faces Separation"
+  buttonText="Donate Now"
+  showAlert={true}
+  alertMessage="URGENT: Families Need Protection Now More Than Ever"
+/> */}
+
       <DonateNow />
 
       <TestimonialCard

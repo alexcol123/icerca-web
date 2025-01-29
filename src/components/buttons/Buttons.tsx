@@ -21,7 +21,11 @@ export const DonateButton = ({
       size="lg"
       className="group px-8 py-8 text-lg font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200 rounded-full"
     >
-      <Link href="/donar" className="flex items-center gap-2">
+      <Link
+        href="https://gofund.me/8b5be9aa"
+        target="_black"
+        className="flex items-center gap-2"
+      >
         Contribuir ahora
         <Heart className="w-5 h-5 transition-transform duration-200 group-hover:scale-110" />
       </Link>

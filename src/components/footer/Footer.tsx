@@ -30,10 +30,15 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <Shield className="w-5 h-5 text-primary" />
-              <span className="text-lg font-bold">
-                Community Protection App
+              <span  className="text-lg font-bold">
+                 Icerca App
               </span>
             </div>
+            <p className="text-sm text-slate-300">  
+   Empoderando a las comunidades con alertas en tiempo real para proteger a las familias inmigrantes.  
+</p>
+
+
             <p className="text-sm text-slate-300">
               Empowering communities through real-time alerts to protect
               immigrant families.

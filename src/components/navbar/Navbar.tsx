@@ -9,7 +9,16 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
-import { Shield, Users, BookOpen, Heart, Phone, Menu, X } from "lucide-react";
+import {
+  Shield,
+  Users,
+  BookOpen,
+  Heart,
+  Phone,
+  Menu,
+  X,
+  ArrowBigLeftIcon,
+} from "lucide-react";
 import Link from "next/link";
 
 const Navbar = () => {
@@ -41,9 +50,7 @@ const Navbar = () => {
             onClick={handleLinkClick}
           >
             <Shield className="h-8 w-8 text-primary" />
-            <span className="ml-2 text-lg font-bold text-primary">
-              Comunidad Segura
-            </span>
+            <span className="ml-2 text-lg font-bold text-primary">Icerca</span>
           </Link>
           <button
             className="p-2 hover:bg-gray-100 rounded-md"
@@ -59,6 +66,15 @@ const Navbar = () => {
           <div className="px-4 py-8 space-y-8">
             {/* Navigation Links */}
             <div className="space-y-6">
+              <Link
+                href="/"
+                className="flex items-center gap-3 p-2 text-lg hover:text-primary transition-colors"
+                onClick={handleLinkClick}
+              >
+                <ArrowBigLeftIcon className="h-5 w-5" />
+                <span>Retornar </span>
+              </Link>
+
               <Link
                 href="/derechos"
                 className="flex items-center gap-3 p-2 text-lg hover:text-primary transition-colors"
@@ -92,12 +108,14 @@ const Navbar = () => {
               className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg py-6  w-60 "
               onClick={handleLinkClick}
             >
-           
-                <Link href="/donar">
-                  <Heart className="w-5 h-5 mr-2" />
-                  Contribuir
-                </Link>
-         
+              <Link
+                href="https://gofund.me/8b5be9aa"
+                target="_black"
+                className="flex items-center gap-2"
+              >
+                <Heart className="w-5 h-5 mr-2" />
+                Contribuir
+              </Link>
             </Button>
           </div>
         </div>
@@ -112,9 +130,7 @@ const Navbar = () => {
           {/* Logo Section */}
           <Link href="/" className="flex items-center">
             <Shield className="h-8 w-8 text-primary" />
-            <span className="ml-2 text-lg font-bold text-primary">
-              Comunidad Segura
-            </span>
+            <span className="ml-2 text-lg font-bold text-primary">Icerca</span>
           </Link>
 
           {/* Desktop Navigation Menu */}
@@ -168,7 +184,11 @@ const Navbar = () => {
               variant="default"
               className="bg-primary hover:bg-primary/90 text-primary-foreground"
             >
-              <Link href="/donar">
+              <Link
+                href="https://gofund.me/8b5be9aa"
+                target="_black"
+                className="flex items-center gap-2"
+              >
                 <Heart className="w-4 h-4 mr-2" />
                 Apoyar
               </Link>

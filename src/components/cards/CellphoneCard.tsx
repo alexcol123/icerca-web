@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { BellRing, Heart, MoveDown, Shield } from "lucide-react";
@@ -68,7 +68,9 @@ const CellphoneCard = () => {
 
     const delayTimer = setTimeout(() => {
       const timer = setInterval(() => {
-        setCurrentImageIndex((prevIndex) => (prevIndex + 1) % itemsToShow.length);
+        setCurrentImageIndex(
+          (prevIndex) => (prevIndex + 1) % itemsToShow.length
+        );
       }, 4000);
 
       return () => clearInterval(timer);
@@ -119,7 +121,7 @@ const CellphoneCard = () => {
                   {itemsToShow[currentImageIndex].icon}
                 </div>
               )}
-              
+
               {itemsToShow[currentImageIndex].smallImageUrl && (
                 <Image
                   src={itemsToShow[currentImageIndex].smallImageUrl}
