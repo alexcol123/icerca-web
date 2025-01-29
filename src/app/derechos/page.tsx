@@ -1,8 +1,7 @@
 
 
 import DonateNow from "@/components/landing/DonateNow";
-import { Button } from "@/components/ui/button";
-import { AlertTriangle, Heart } from "lucide-react";
+import { AlertTriangle } from "lucide-react";
 import Image from "next/image";
 
 
